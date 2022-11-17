@@ -964,7 +964,7 @@
                 (item) => item[option] !== "" && item[option] !== undefined
             );
             let mappedData = newArray.map((item) => item[option]);
-
+            console.log(mappedData)
             const mappingFinalOptions = (choice) => {
                 return ` 
               <option value='${choice}' class='dropdown-option-cpu'>${choice}</option>
@@ -981,7 +981,8 @@
     };
 
     // Get the sever from the page name
-    const pageName = window.location.pathname.slice(7, 20);
+    const pageName = "m50Cyp1Ur204"
+    // window.location.pathname.slice(7, 20);
     console.log(pageName)
     // May need to change the page name depending on the url position
     // .slice(0, -5).slice(1);
