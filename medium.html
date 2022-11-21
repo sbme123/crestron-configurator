@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Small Meeting Room</title>
+    <title>Medium Meeting Room</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
@@ -296,7 +296,7 @@
                                 <img class="card-icon" src="images/audio-icon.png" alt="">
                                 <p class="card-question">What are your audio preferences?</p>
                                 <div class="select-wrapper border-wrapper">
-                                    <select id="dropdown-select-audio-preferences" class="option-drop-down">
+                                    <select id="dropdown-select-audio-preferences" class="option-drop-down" required>
 
                                         <!-- JS is adding the options here -->
                                     </select>
@@ -317,7 +317,7 @@
                                 <img class="card-icon" src="images/display-icon.png" alt="">
                                 <p class="card-question">What are your display preferences?</p>
                                 <div class="select-wrapper border-wrapper">
-                                    <select id="dropdown-select-display-option" class="option-drop-down">
+                                    <select id="dropdown-select-display-option" class="option-drop-down" required>
 
                                         <!-- JS is adding the options here -->
                                     </select>
@@ -339,7 +339,7 @@
                                 <p class="card-question">Do these need to be wall mounted <br> or on a trolley?
                                 </p>
                                 <div class="select-wrapper border-wrapper">
-                                    <select id="dropdown-select-wall-mount" class="option-drop-down">
+                                    <select id="dropdown-select-wall-mount" class="option-drop-down" required>
 
                                         <!-- JS is adding the options here -->
                                     </select>
@@ -385,7 +385,7 @@
                                 <p class="card-question">Would you like to optimise your room <br> with room booking?
                                 </p>
                                 <div class="select-wrapper border-wrapper">
-                                    <select id="dropdown-select-room-bookings" class="option-drop-down">
+                                    <select id="dropdown-select-room-bookings" class="option-drop-down" required>
 
                                         <!-- JS is adding the options here -->
                                     </select>
@@ -406,7 +406,7 @@
                                 <img class="card-icon" src="images/flex-icon.png" alt="">
                                 <p class="card-question">Do you want to protect your <br> investment with FlexCare?</p>
                                 <div class="select-wrapper border-wrapper">
-                                    <select id="dropdown-select-flex-care" class="option-drop-down">
+                                    <select id="dropdown-select-flex-care" class="option-drop-down" required>
 
                                         <!-- JS is adding the options here -->
                                     </select>
@@ -428,7 +428,7 @@
                                 <p class="card-question">Would you like to take remote management <br> via XiO Cloud?
                                     (Advised)</p>
                                 <div class="select-wrapper border-wrapper">
-                                    <select id="dropdown-select-xio-cloud" class="option-drop-down">
+                                    <select id="dropdown-select-xio-cloud" class="option-drop-down" required>
 
                                         <!-- JS is adding the options here -->
                                     </select>
@@ -451,7 +451,7 @@
                                     you want to learn more <br>
                                     about the benefits of Premium Room licenses? </p>
                                 <div class="select-wrapper border-wrapper">
-                                    <select id="dropdown-select-room-license" class="option-drop-down">
+                                    <select id="dropdown-select-room-license" class="option-drop-down" required>
 
                                         <!-- JS is adding the options here -->
                                     </select>
@@ -574,7 +574,7 @@
     sortingProductOptions(`${pageName}`, "audioPreferences", "audio-preferences");
     sortingProductOptions(`${pageName}`, "displayOptions", "display-option");
     sortingProductOptions(`${pageName}`, "wallMount", "wall-mount");
-    sortingProductOptions(`${pageName}`, "trollyMount", "trolly-mount");
+    // sortingProductOptions(`${pageName}`, "trollyMount", "trolly-mount");
     sortingProductOptions(`${pageName}`, "roomBookings", "room-bookings");
     sortingProductOptions(`${pageName}`, "flexcare", "flex-care");
     sortingProductOptions(`${pageName}`, "xioCloud", "xio-cloud");
@@ -596,7 +596,7 @@
         const audioPreference = document.getElementById("dropdown-select-audio-preferences").value;
         const displayOptions = document.getElementById("dropdown-select-display-option").value;
         const wallMount = document.getElementById("dropdown-select-wall-mount").value;
-        const trollyMount = document.getElementById("dropdown-select-trolly-mount").value;
+        // const trollyMount = document.getElementById("dropdown-select-trolly-mount").value;
         const roomBookings = document.getElementById("dropdown-select-room-bookings").value;
         const flexcare = document.getElementById("dropdown-select-flex-care").value;
         const xioCloud = document.getElementById("dropdown-select-xio-cloud").value;
@@ -627,7 +627,7 @@
                     AUDIOPREFERENCE: audioPreference,
                     DISPLAYOPTIONS: displayOptions,
                     WALLMOUNT: wallMount,
-                    TROLLYMOUNT: trollyMount,
+                    // TROLLYMOUNT: trollyMount,
                     ROOMBOOKINGS: roomBookings,
                     FLEXCARE: flexcare,
                     XIOCLOUD: xioCloud,
