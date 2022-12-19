@@ -15,34 +15,34 @@
 
 <style>
     body {
-        overflow-x: hidden !important;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
     }
 
 
     :root {
-        --dark-blue: #003991;
-        --light-grey: #EEEEEF;
-        --black: #000000;
-        --white: #ffffff;
+        --dark-blue: #003991 !important;
+        --light-grey: #EEEEEF !important;
+        --black: #000000 !important;
+        --white: #ffffff !important;
     }
 
     h1 {
         font-size: 48px !important;
-        color: var(--dark-blue);
+        color: var(--dark-blue) !important;
     }
 
     h2 {
         font-size: 24px !important;
-        color: var(--dark-blue);
-        font-weight: 400;
+        color: var(--dark-blue) !important;
+        font-weight: 400 !important;
     }
 
     h3 {
         font-size: 36px !important;
-        color: var(--dark-blue);
+        color: var(--dark-blue) !important;
     }
 
     p {
@@ -50,15 +50,13 @@
     }
 
     button {
-        font-size: 16px;
+        font-size: 16px !important;
 
     }
 
     .container-min-width {
-        min-width: 1200px !important;
-        max-width: 1200px !important;
-
-
+        /* min-width: 1200px !important;
+        max-width: 1200px !important; */
     }
 
     /* Hero styles */
@@ -68,38 +66,43 @@
     }
 
     .bg-hero-gradient {
-        position: absolute;
-        top: -100px;
-        left: -100px;
-        height: 350px;
-        width: 200%;
-        z-index: -1;
-        transform: rotate(355deg);
-        opacity: 1;
-        background: rgb(183, 158, 179);
-        background: linear-gradient(360deg, rgba(183, 158, 179, 1) 0%, rgba(183, 158, 179, 1) 0%, rgba(238, 238, 239, 1) 0%, rgba(238, 238, 239, 1) 16%, rgba(255, 255, 255, 0) 100%);
+        overflow-x: hidden !important;
+        position: absolute !important;
+        top: 0px !important;
+        left: -100px !important;
+        height: 375px !important;
+        width: 110% !important;
+        z-index: -1 !important;
+        transform: rotate(355deg) !important;
+        -webkit-transform: rotate(355deg) !important;
+        -moz-transform: rotate(355deg) !important;
+        -o-transform: rotate(355deg) !important;
+        -ms-transform: rotate(355deg) !important;
+        opacity: 1 !important;
+        /* background: rgb(183, 158, 179); */
+        /* background: linear-gradient(360deg, rgba(183, 158, 179, 1) 0%, rgba(183, 158, 179, 1) 0%, rgba(238, 238, 239, 1) 0%, rgba(238, 238, 239, 1) 16%, rgba(255, 255, 255, 0) 100%); */
     }
 
     .hero-content-container {}
 
     .hero-img-wrapper {
-        max-width: 500px;
-        height: auto;
+        max-width: 500px !important;
+        height: auto !important;
 
     }
 
     .hero-image {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
+        width: 100% !important;
+        height: auto !important;
+        object-fit: cover !important;
     }
 
     .hero-logo-wrapper {
-        width: 300px
+        width: 300px !important;
     }
 
     .hero-logo {
-        width: 100%
+        width: 100% !important;
     }
 
     /* End of hero styles */
@@ -107,54 +110,64 @@
     /* Card styles */
 
     .card-img-wrapper {
-        width: 500px;
-        height: auto;
+        width: 500px !important;
+        height: auto !important;
     }
 
     .card-image {
-        width: 100%;
+        width: 100% !important;
     }
 
     .button-wrapper {
-        max-width: 120px;
-        height: auto;
+        max-width: 120px !important;
+        height: auto !important;
     }
 
     .card-content-wrapper {
-        height: 100%;
-        width: auto;
+        height: 100% !important;
+        width: auto !important;
     }
 
     button {
-        width: 100%;
-        color: var(--dark-blue);
-        border: 2px solid var(--dark-blue);
-        border-radius: 10px;
-        background: var(--white);
-        text-align: center;
-        padding: 5px;
-        text-transform: uppercase;
-        font-size: 14px;
-        font-weight: 600;
+        width: 100% !important;
+        color: var(--dark-blue) !important;
+        border: 2px solid var(--dark-blue) !important;
+        border-radius: 10px !important;
+        background: var(--white) !important;
+        text-align: center !important;
+        padding: 5px !important;
+        text-transform: uppercase !important;
+        font-size: 14px !important;
+        font-weight: 600 !important;
     }
 
     /* End of Card styles */
 
     .border-red {
-        border: 1px solid red;
+        border: 1px solid red !important;
+    }
+
+    .content-wrap img {
+        width: 100% !important;
+    }
+
+    .divider-line {
+
+        width: 1100px !important;
+        height: 1px !important;
+        background-color: var(--dark-blue) !important;
+        margin-top: 55px !important;
     }
 </style>
 
 <body>
 
-    <!-- Using bootstrap 5.02 -->
-    <!-- Must be hardcoded into the webpage -->
-    <!-- Put together Google API - Data needs reviewing -->
-    <!-- Pull the data form Google using the Async API  -->
-    <!-- Send the enquiry with Send GRid  -->
-    <!-- Possible JS deliver injection rathat than this inline styles  -->
 
-    <!-- This is setting the main width for the entire webpage -->
+    <!-- <div class="bg-image-wrapper">
+        <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/bg-gradient-hero.png"
+            class="bg-hero-gradient" alt="">
+    </div> -->
+
     <div class="container-min-width ">
 
         <!-- background gradient that is absolutly positioned behind the contnet 
@@ -163,23 +176,28 @@ Then an image left with text on the right  -->
         <section class="hero-section">
             <div class="container-fluid w-100">
                 <div class="row d-flex justify-content-center align-items-center">
-                    <div class="col-6 text-start hero-content-container">
+                    <div class="col-6 text-start">
                         <h1 id="" class="">The Perfect Pairing</h1>
                         <h2 class="">Microsoft Teams rooms made simple</h2>
                         <div class="hero-logo-wrapper">
-                            <img src="images/Group 423.png" class="hero-logo" alt="">
+                            <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/logos2.png"
+                                class="hero-logo" alt="">
                         </div>
                     </div>
                     <div class="col-6 hero-img-wrapper">
                         <div>
-                            <img src="images/flex-care.png" class="hero-image" alt="">
+                            <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/flex-care.png"
+                                class="hero-image" alt="">
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="bg-hero-gradient"></div>
         </section>
+
+        <div class="d-flex justify-content-center align-items-center">
+            <div class="divider-line">
+            </div>
+        </div>
 
         <section class="">
             <div class="container-fluid justify-content-center text-center">
@@ -192,10 +210,11 @@ Then an image left with text on the right  -->
 
                 <!-- Section 2 -->
 
-                <div class="row pb-5">
+                <div class="row pb-5 pt-5">
                     <div class="col-6 d-flex justify-content-center align-items-center">
                         <div class="card-img-wrapper ">
-                            <img src="images/small-room-img1.png" class="card-image" alt="">
+                            <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/medium-room-img2.png"
+                                class="card-image" alt="">
                         </div>
                     </div>
                     <div class="col-6">
@@ -203,15 +222,16 @@ Then an image left with text on the right  -->
                             <h2 class="">Small</h2>
                             <p>2-4 People <br> Mic Range 3 metres</p>
                             <div class="button-wrapper">
-                                <a href="small.html"><button>configure</button></a>
+                                <a href="https://eu.tdsynnex.com/small-meeting-room"><button>configure</button></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row pb-5">
+                <div class="row pb-5 pt-5">
                     <div class="col-6 d-flex justify-content-center align-items-center">
                         <div class="card-img-wrapper ">
-                            <img src="images/medium-room-img2.png" class="card-image" alt="">
+                            <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/small-room-img1.png"
+                                class="card-image" alt="">
                         </div>
                     </div>
                     <div class="col-6">
@@ -226,10 +246,11 @@ Then an image left with text on the right  -->
                         </div>
                     </div>
                 </div>
-                <div class="row pb-5">
+                <div class="row pb-5 pt-5">
                     <div class="col-6 d-flex justify-content-center align-items-center">
                         <div class="card-img-wrapper ">
-                            <img src="images/large-room-img3.png" class="card-image" alt="">
+                            <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/large-room-img3.png"
+                                class="card-image" alt="">
                         </div>
                     </div>
                     <div class="col-6">
@@ -246,17 +267,6 @@ Then an image left with text on the right  -->
         </section>
 
     </div>
-
-
-
-
-
-
-
-
-
-
-
 
 </body>
 

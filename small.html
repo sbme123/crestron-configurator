@@ -12,35 +12,35 @@
 
 <style>
     body {
-        /* overflow-x: hidden !important; */
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        margin: auto 0 !important;
     }
 
 
     :root {
-        --dark-blue: #003991;
-        --light-grey: #EEEEEF;
-        --light-blue: #F2F5F9;
-        --black: #000000;
-        --white: #ffffff;
+        --dark-blue: #003991 !important;
+        --light-grey: #EEEEEF !important;
+        --light-blue: #F2F5F9 !important;
+        --black: #000000 !important;
+        --white: #ffffff !important;
     }
 
     h1 {
         font-size: 48px !important;
-        color: var(--dark-blue);
+        color: var(--dark-blue) !important;
     }
 
     h2 {
         font-size: 24px !important;
-        color: var(--dark-blue);
-        font-weight: 400;
+        color: var(--dark-blue) !important;
+        font-weight: 400 !important;
     }
 
     h3 {
         font-size: 36px !important;
-        color: var(--dark-blue);
+        color: var(--dark-blue) !important;
     }
 
     p {
@@ -48,61 +48,50 @@
     }
 
     button {
-        font-size: 16px;
+        font-size: 16px !important;
 
     }
 
     .bg-grey {
-        background-color: var(--light-grey);
+        background-color: var(--light-grey) !important;
     }
 
     .container-min-width {
-        min-width: 1200px !important;
-        max-width: 1200px !important;
+        /* min-width: 1200px !important;
+        max-width: 1200px !important; */
     }
 
     /* Hero styles */
 
     .hero-section {
-        padding-top: 100px;
+        padding-top: 100px !important;
     }
 
-    .bg-hero-gradient {
-        overflow-x: hidden;
-        position: absolute;
-        top: 0px;
-        left: -100px;
-        height: 375px;
-        width: 110%;
-        z-index: -1;
-        transform: rotate(355deg);
-        -webkit-transform: rotate(355deg);
-        -moz-transform: rotate(355deg);
-        -o-transform: rotate(355deg);
-        -ms-transform: rotate(355deg);
-        opacity: 1;
-
-        /* background: rgb(183, 158, 179); */
-        /* background: linear-gradient(360deg, rgba(183, 158, 179, 1) 0%, rgba(183, 158, 179, 1) 0%, rgba(238, 238, 239, 1) 0%, rgba(238, 238, 239, 1) 16%, rgba(255, 255, 255, 0) 100%); */
-    }
+    .bg-hero-gradient {}
 
     .hero-img-wrapper {
-        max-width: 500px;
-        height: auto;
+        max-width: 500px !important;
+        height: auto !important;
+        overflow-x: hidden !important;
     }
 
     .hero-image {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
+        width: 100% !important;
+        height: auto !important;
+        object-fit: cover !important;
     }
 
     .hero-logo-wrapper {
-        width: 300px
+        width: 300px !important;
     }
 
     .hero-logo {
-        width: 100%
+        width: 100% !important;
+    }
+
+    .bg-image-wrapper {
+        width: 100% !important;
+        overflow-x: hidden !important;
     }
 
     /* End of hero styles */
@@ -112,26 +101,26 @@
     /* Card styles */
 
     .card-img-wrapper {
-        width: 500px;
-        height: auto;
+        width: 500px !important;
+        height: auto !important;
 
     }
 
     .card-image {
-        width: 400px;
+        width: 400px !important;
     }
 
     .card-image-smaller {
-        width: 350px;
+        width: 350px !important;
     }
 
     .card-icon {
-        width: 50px;
-        padding-bottom: 10px;
+        width: 50px !important;
+        padding-bottom: 10px !important;
     }
 
     .card-question {
-        color: var(--dark-blue);
+        color: var(--dark-blue) !important;
     }
 
     .button-wrapper {
@@ -140,162 +129,116 @@
     }
 
     .card-content-wrapper {
-        height: 100%;
-        width: auto;
-        padding-right: 100px;
+        height: 100% !important;
+        width: auto !important;
+        padding-right: 100px !important;
     }
 
     button {
-        width: 200px;
-        color: var(--dark-blue);
-        border: 2px solid var(--dark-blue);
-        border-radius: 10px;
-        background: var(--white);
-        text-align: center;
-        padding: 5px;
-        text-transform: uppercase;
-        font-size: 14px;
-        font-weight: 600;
+        width: 200px !important;
+        color: var(--dark-blue) !important;
+        border: 2px solid var(--dark-blue) !important;
+        border-radius: 40px !important;
+        background: var(--white) !important;
+        text-align: center !important;
+        padding: 10px !important;
+        text-transform: uppercase !important;
+        font-size: 14px !important;
+        font-weight: 600 !important;
     }
 
-    .option-drop-down {
+
+    select {
+        /* .option-drop-down { */
         /* styling */
-        text-align: center;
-        width: 400px;
-        background-color: white;
-        border: 1px solid #000;
-        border-radius: 40px;
-        display: inline-block;
-        font: inherit;
-        line-height: 1em;
-        padding: 0.6em 3.5em 0.8em 2em;
+        font-size: 18px !important;
+        min-width: 450px !important;
+        text-align: center !important;
+        width: 450px !important;
+        background-color: white !important;
+        border: 1px solid #000 !important;
+        border-radius: 40px !important;
+        display: inline-block !important;
+        font: inherit !important;
+        line-height: 1em !important;
+        padding: 0.6em 0.4em 0.8em 0.4em !important;
         /* reset */
-        margin: 0;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-        -webkit-appearance: none;
-        -moz-appearance: none;
+        margin: 0 !important;
+        -webkit-box-sizing: border-box !important;
+        -moz-box-sizing: border-box !important;
+        box-sizing: border-box !important;
+        -webkit-appearance: none !important;
+        -moz-appearance: none !important;
     }
-
-
-
-
-    /* .option-drop-down::after {
-        content: "1" !important;
-        position: absolute !important;
-        right: 10px !important;
-        height: 10px !important;
-        top: 0 !important;
-        bottom: 0 !important;
-        margin: auto !important;
-        padding: 0 10px !important;
-        pointer-events: none !important;
-        ;
-        color: white !important;
-        z-index: 999 !important;
-    } */
-
-
-
-    /* The blue arrow dropdowns */
-
-    /* select.option-drop-down {
-        background-image:
-            linear-gradient(45deg, transparent 40%, #fff 60%),
-            linear-gradient(135deg, #fff 60%, transparent 40%),
-            linear-gradient(to right, var(--dark-blue), var(--dark-blue)) !important;
-        background-position:
-            calc(100% - 20px) calc(1em + 5px),
-            calc(100% - 15px) calc(1em + 5px),
-            100% 0 !important;
-        background-size:
-            5px 5px,
-            5px 5px,
-            2.5em 3em !important;
-        background-repeat: no-repeat !important;
-    } */
-
 
     select.option-drop-down {
-
+        font-size: 18px !important;
         background-image:
             linear-gradient(45deg, transparent 50%, white 50%),
             linear-gradient(135deg, white 50%, transparent 50%),
-            linear-gradient(to right, var(--dark-blue), var(--dark-blue));
+            linear-gradient(to right, var(--dark-blue), var(--dark-blue)) !important;
         background-position:
             calc(100% - 20px) calc(1em + 2px),
             calc(100% - 15px) calc(1em + 2px),
-            100% 0;
+            100% 0 !important;
+        ;
         background-size:
             5px 5px,
             5px 5px,
-            2.5em 2.5em;
-        background-repeat: no-repeat;
+            2.5em 2.5em !important;
+        background-repeat: no-repeat !important;
+        ;
     }
 
-    /* select.option-drop-down:focus {
-        background-image:
-            linear-gradient(45deg, white 50%, transparent 50%),
-            linear-gradient(135deg, transparent 50%, white 50%),
-            linear-gradient(to right, gray, gray);
-        background-position:
-            calc(100% - 15px) 1em,
-            calc(100% - 20px) 1em,
-            100% 0;
-        background-size:
-            5px 5px,
-            5px 5px,
-            2.5em 2.5em;
-        background-repeat: no-repeat;
-        border-color: grey;
-        outline: 0;
-    } */
+    .dropdown-option-audio-preferences {
+        text-align: center !important;
+        padding: 0.6em 3.5em 0.8em 1em !important;
+        font-size: 18px !important;
+        line-height: 1em !important;
+    }
 
     .border-red {
-        border: 1px solid red
+        border: 1px solid red !important;
     }
-
-    /* .option-drop-down::after {
-        content: "1" !important;
-        position: absolute !important;
-        right: 10px !important;
-        height: 10px !important;
-        top: 0 !important;
-        bottom: 0 !important;
-        margin: auto !important;
-        padding: 0 10px !important;
-        pointer-events: none !important;
-        ;
-        color: white !important;
-        z-index: 999 !important;
-    } */
-
-    /* select {
-        -webkit-appearance: none !important;
-    } */
 
     /* End of config stylings */
 
     /* Form submit styles  */
 
     .user-input-wrap {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
     }
 
     .user-input-wrap input {
-        width: 500px;
+        width: 500px !important;
+        min-width: 500px !important;
+        color: var(--black);
+        line-height: 2em;
     }
 
     .bg-blue {
-        background-color: var(--dark-blue);
+        background-color: var(--dark-blue) !important;
     }
 
     .white {
-        color: #fff;
+        color: #fff !important;
+    }
+
+    .divider-line {
+        width: 1100px !important;
+        height: 1px !important;
+        background-color: var(--dark-blue) !important;
+        margin-top: 55px !important;
+        margin-bottom: 55px !important;
+    }
+
+    .dropdown-border-wrap {
+        width: 100% !important;
+        position: relative !important;
+        padding: 2px !important;
     }
 </style>
 
@@ -308,27 +251,30 @@
                 <div class="container-fluid w-100">
                     <div class="row w-100 d-flex justify-content-center align-items-center">
                         <div class="col-6 text-start">
-                            <a href="index.html">
+                            <a href="https://eu.tdsynnex.com/crestron-configurator">
                                 <p>Back</p>
                             </a>
                             <h1 id="room-name" class="">Small Rooms</h1>
                             <h2 class="">Configure your meeting space</h2>
                             <div class="hero-logo-wrapper">
-                                <img src="images/Group 423.png" class="hero-logo" alt="">
+                                <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/logos2.png"
+                                    class="hero-logo" alt="">
                             </div>
                         </div>
                         <div class="col-6 hero-img-wrapper">
                             <div>
-                                <img src="images/flex-care.png" class="hero-image" alt="">
+                                <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/flex-care.png"
+                                    class="hero-image" alt="">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <img src="images/bg-gradient-hero.png" class="bg-hero-gradient" alt="">
-                </div>
-                <!-- <div class="bg-hero-gradient"></div> -->
             </section>
+
+            <div class="d-flex justify-content-center align-items-center">
+                <div class="divider-line">
+                </div>
+            </div>
 
 
             <section class="">
@@ -338,17 +284,19 @@
                     <div class="row pb-5 pt-5">
                         <div class="col-6 d-flex justify-content-center align-items-center">
                             <div class="card-img-wrapper ">
-                                <img src="images/audiooption.png" class="card-image" alt="">
+                                <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/audio-option.png"
+                                    class="card-image" alt="">
                             </div>
                         </div>
                         <div class="col-6">
                             <div
                                 class="card-content-wrapper d-flex flex-column justify-content-center text-center align-items-center">
-                                <img class="card-icon" src="images/audio-icon.png" alt="">
+                                <img class="card-icon"
+                                    src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/audio-icon.png"
+                                    alt="">
                                 <p class="card-question">What are your audio preferences?</p>
-                                <div class="select-wrapper border-wrapper">
+                                <div class="select-wrapper">
                                     <select id="dropdown-select-audio-preferences" class="option-drop-down">
-
                                         <!-- JS is adding the options here -->
                                     </select>
                                 </div>
@@ -359,15 +307,18 @@
                     <div class="row bg-grey pb-5 pt-5">
                         <div class="col-6 d-flex justify-content-center align-items-center">
                             <div class="card-img-wrapper ">
-                                <img src="images/A80KU_sony_ledtv_01.webp" class="card-image" alt="">
+                                <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/display-option-new.png"
+                                    class="card-image" alt="">
                             </div>
                         </div>
                         <div class="col-6">
                             <div
                                 class="card-content-wrapper d-flex flex-column justify-content-center text-center align-items-center">
-                                <img class="card-icon" src="images/display-icon.png" alt="">
+                                <img class="card-icon"
+                                    src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/display-icon.png"
+                                    alt="">
                                 <p class="card-question">What are your display preferences?</p>
-                                <div class="select-wrapper border-wrapper">
+                                <div class="select-wrapper">
                                     <select id="dropdown-select-display-option" class="option-drop-down">
 
                                         <!-- JS is adding the options here -->
@@ -380,16 +331,19 @@
                     <div class="row pb-5 pt-5">
                         <div class="col-6 d-flex justify-content-center align-items-center">
                             <div class="card-img-wrapper ">
-                                <img src="images/MOUNTING OPTION.webp" class="card-image-smaller" alt="">
+                                <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/mounting-option.jpg"
+                                    class="card-image-smaller" alt="">
                             </div>
                         </div>
                         <div class="col-6">
                             <div
                                 class="card-content-wrapper d-flex flex-column justify-content-center text-center align-items-center">
-                                <img class="card-icon" src="images/booking-icon.png" alt="">
+                                <img class="card-icon"
+                                    src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/booking-icon.png"
+                                    alt="">
                                 <p class="card-question">Do these need to be wall mounted <br> or on a trolley?
                                 </p>
-                                <div class="select-wrapper border-wrapper">
+                                <div class="select-wrapper dropdown-border-wrap ">
                                     <select id="dropdown-select-wall-mount" class="option-drop-down">
 
                                         <!-- JS is adding the options here -->
@@ -404,16 +358,19 @@
                     <div class="row bg-grey pb-5 pt-5">
                         <div class="col-6 d-flex justify-content-center align-items-center">
                             <div class="card-img-wrapper ">
-                                <img src="images/Scheduler.png" class="card-image" alt="">
+                                <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/scheduler.png"
+                                    class="card-image" alt="">
                             </div>
                         </div>
                         <div class="col-6">
                             <div
                                 class="card-content-wrapper d-flex flex-column justify-content-center text-center align-items-center">
-                                <img class="card-icon" src="images/booking-icon.png" alt="">
+                                <img class="card-icon"
+                                    src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/booking-icon.png"
+                                    alt="">
                                 <p class="card-question">Would you like to optimise your room <br> with room booking?
                                 </p>
-                                <div class="select-wrapper border-wrapper">
+                                <div class="select-wrapper">
                                     <select id="dropdown-select-room-bookings" class="option-drop-down">
 
                                         <!-- JS is adding the options here -->
@@ -426,15 +383,18 @@
                     <div class="row pb-5 pt-5">
                         <div class="col-6 d-flex justify-content-center align-items-center">
                             <div class="card-img-wrapper ">
-                                <img src="images/flex-care.png" class="card-image" alt="">
+                                <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/flex-care.png"
+                                    class="card-image" alt="">
                             </div>
                         </div>
                         <div class="col-6">
                             <div
                                 class="card-content-wrapper d-flex flex-column justify-content-center text-center align-items-center">
-                                <img class="card-icon" src="images/flex-icon.png" alt="">
+                                <img class="card-icon"
+                                    src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/flex-icon.png"
+                                    alt="">
                                 <p class="card-question">Do you want to protect your <br> investment with FlexCare?</p>
-                                <div class="select-wrapper border-wrapper">
+                                <div class="select-wrapper">
                                     <select id="dropdown-select-flex-care" class="option-drop-down">
 
                                         <!-- JS is adding the options here -->
@@ -447,16 +407,19 @@
                     <div class="row bg-grey pb-5 pt-5">
                         <div class="col-6 d-flex justify-content-center align-items-center">
                             <div class="card-img-wrapper ">
-                                <img src="images/xio (1).png" class="card-image" alt="">
+                                <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/xio-options.png"
+                                    class="card-image" alt="">
                             </div>
                         </div>
                         <div class="col-6">
                             <div
                                 class="card-content-wrapper d-flex flex-column justify-content-center text-center align-items-center">
-                                <img class="card-icon" src="images/cloud-icon.png" alt="">
+                                <img class="card-icon"
+                                    src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/cloud-icon.png"
+                                    alt="">
                                 <p class="card-question">Would you like to take remote management <br> via XiO Cloud?
                                     (Advised)</p>
-                                <div class="select-wrapper border-wrapper">
+                                <div class="select-wrapper">
                                     <select id="dropdown-select-xio-cloud" class="option-drop-down">
 
                                         <!-- JS is adding the options here -->
@@ -469,17 +432,20 @@
                     <div class="row pb-5 pt-5">
                         <div class="col-6 d-flex justify-content-center align-items-center">
                             <div class="card-img-wrapper ">
-                                <img src="images/flex-care.png" class="card-image" alt="">
+                                <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/flex-care.png"
+                                    class="card-image" alt="">
                             </div>
                         </div>
                         <div class="col-6">
                             <div
                                 class="card-content-wrapper d-flex flex-column justify-content-center text-center align-items-center">
-                                <img class="card-icon" src="images/booking-icon.png" alt="">
+                                <img class="card-icon"
+                                    src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/booking-icon.png"
+                                    alt="">
                                 <p class="card-question">Premium licenses are the best choice <br> for your partner. Do
                                     you want to learn more <br>
                                     about the benefits of Premium Room licenses? </p>
-                                <div class="select-wrapper border-wrapper">
+                                <div class="select-wrapper">
                                     <select id="dropdown-select-room-license" class="option-drop-down">
 
                                         <!-- JS is adding the options here -->
@@ -671,7 +637,7 @@
             if (response.status === 200) {
                 document.getElementById("submit-btn").innerText =
                     "Submit";
-                window.location.href = "http://127.0.0.1:5500/thanks.html";
+                window.location.href = "https://eu.tdsynnex.com/crestron-configurator/thanks";
                 // alert("Submitted");
             } else {
                 alert("Error: The form was not submitted, please refresh the page and try again");

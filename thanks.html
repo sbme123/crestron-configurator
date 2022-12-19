@@ -5,60 +5,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thanks</title>
+    <title>Crestron Configurator</title>
+
+    <!-- Using bootstrap CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
 </head>
 
 <style>
     body {
-        overflow-x: hidden !important;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
     }
 
 
     :root {
-        --dark-blue: #003991;
-        --light-grey: #EEEEEF;
-        --light-blue: #F2F5F9;
-        --black: #000000;
-        --white: #ffffff;
+        --dark-blue: #003991 !important;
+        --light-grey: #EEEEEF !important;
+        --black: #000000 !important;
+        --white: #ffffff !important;
     }
 
     h1 {
         font-size: 48px !important;
-        color: var(--dark-blue);
+        color: var(--dark-blue) !important;
     }
 
     h2 {
         font-size: 24px !important;
-        color: var(--dark-blue);
-        font-weight: 400;
+        color: var(--dark-blue) !important;
+        font-weight: 400 !important;
     }
 
     h3 {
         font-size: 36px !important;
-        color: var(--dark-blue);
+        color: var(--dark-blue) !important;
     }
 
     p {
-        font-size: 22px !important;
+        font-size: 18px !important;
     }
 
     button {
-        font-size: 16px;
+        font-size: 16px !important;
 
-    }
-
-    .bg-grey {
-        background-color: var(--light-grey);
     }
 
     .container-min-width {
-        min-width: 1200px !important;
-        max-width: 1200px !important;
+        /* min-width: 1200px !important;
+        max-width: 1200px !important; */
     }
 
     /* Hero styles */
@@ -68,230 +66,144 @@
     }
 
     .bg-hero-gradient {
-        overflow-x: hidden;
-        position: fixed;
-        top: 0px;
-        left: -100px;
-        height: 375px;
-        width: 110%;
-        z-index: -1;
-        transform: rotate(355deg);
-        opacity: 1;
-        border: none !important;
+        overflow-x: hidden !important;
+        position: absolute !important;
+        top: 0px !important;
+        left: -100px !important;
+        height: 375px !important;
+        width: 110% !important;
+        z-index: -1 !important;
+        transform: rotate(355deg) !important;
+        -webkit-transform: rotate(355deg) !important;
+        -moz-transform: rotate(355deg) !important;
+        -o-transform: rotate(355deg) !important;
+        -ms-transform: rotate(355deg) !important;
+        opacity: 1 !important;
         /* background: rgb(183, 158, 179); */
         /* background: linear-gradient(360deg, rgba(183, 158, 179, 1) 0%, rgba(183, 158, 179, 1) 0%, rgba(238, 238, 239, 1) 0%, rgba(238, 238, 239, 1) 16%, rgba(255, 255, 255, 0) 100%); */
     }
 
+    .hero-content-container {}
+
     .hero-img-wrapper {
-        max-width: 500px;
-        height: auto;
+        max-width: 500px !important;
+        height: auto !important;
+
     }
 
     .hero-image {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
+        width: 100% !important;
+        height: auto !important;
+        object-fit: cover !important;
     }
 
     .hero-logo-wrapper {
-        width: 300px
+        width: 300px !important;
     }
 
     .hero-logo {
-        width: 100%
+        width: 100% !important;
     }
 
     /* End of hero styles */
 
-    /* Start of config stylings  */
-
     /* Card styles */
 
     .card-img-wrapper {
-        width: 500px;
-        height: auto;
-
+        width: 500px !important;
+        height: auto !important;
     }
 
     .card-image {
-        width: 400px;
-    }
-
-
-
-    .card-icon {
-        width: 50px;
-        padding-bottom: 10px;
-    }
-
-    .card-question {
-        color: var(--dark-blue);
+        width: 100% !important;
     }
 
     .button-wrapper {
-        max-width: 120px;
-        height: auto;
+        max-width: 120px !important;
+        height: auto !important;
     }
 
     .card-content-wrapper {
-        height: 100%;
-        width: auto;
-        padding-right: 100px;
+        height: 100% !important;
+        width: auto !important;
     }
 
     button {
-        width: 200px;
-        color: var(--dark-blue);
-        border: 2px solid var(--dark-blue);
-        border-radius: 10px;
-        background: var(--white);
-        text-align: center;
-        padding: 5px;
-        text-transform: uppercase;
-        font-size: 14px;
-        font-weight: 600;
+        width: 100% !important;
+        color: var(--dark-blue) !important;
+        border: 2px solid var(--dark-blue) !important;
+        border-radius: 10px !important;
+        background: var(--white) !important;
+        text-align: center !important;
+        padding: 5px !important;
+        text-transform: uppercase !important;
+        font-size: 14px !important;
+        font-weight: 600 !important;
     }
 
-    .option-drop-down {
-        width: 300px;
-    }
-
-    .option-drop-down {
-        width: 400px;
-        /* padding: 2px 20px 2px 20px; */
-        text-align: center;
-        height: 40px !important;
-        background-color: #ffffff;
-        color: #000000;
-        font-size: 14px;
-        /* This turns off the dropdown stuff */
-        appearance: none;
-        position: relative;
-        border-radius: 50px;
-    }
-
-    .option-drop-down::after {
-        content: "1" !important;
-        position: absolute !important;
-        right: 10px !important;
-        height: 10px !important;
-        top: 0 !important;
-        bottom: 0 !important;
-        margin: auto !important;
-        padding: 0 10px !important;
-        pointer-events: none !important;
-        ;
-        color: white !important;
-        z-index: 999 !important;
-    }
-
-    select {
-        -webkit-appearance: none !important;
-    }
-
-    /* The blue arrow dropdowns */
-
-    select.option-drop-down {
-        background-image:
-            linear-gradient(45deg, transparent 40%, #fff 60%),
-            linear-gradient(135deg, #fff 60%, transparent 40%),
-            linear-gradient(to right, var(--dark-blue), var(--dark-blue)) !important;
-        background-position:
-            calc(100% - 20px) calc(1em + 5px),
-            calc(100% - 15px) calc(1em + 5px),
-            100% 0 !important;
-        background-size:
-            5px 5px,
-            5px 5px,
-            2.5em 3em !important;
-        background-repeat: no-repeat !important;
-    }
+    /* End of Card styles */
 
     .border-red {
-        border: 1px solid red
+        border: 1px solid red !important;
     }
 
-    /* .option-drop-down::after {
-        content: "1" !important;
-        position: absolute !important;
-        right: 10px !important;
-        height: 10px !important;
-        top: 0 !important;
-        bottom: 0 !important;
-        margin: auto !important;
-        padding: 0 10px !important;
-        pointer-events: none !important;
-        ;
-        color: white !important;
-        z-index: 999 !important;
-    } */
-
-    /* select {
-        -webkit-appearance: none !important;
-    } */
-
-    /* End of config stylings */
-
-    /* Form submit styles  */
-
-    .user-input-wrap {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    .content-wrap img {
+        width: 100% !important;
     }
 
-    .user-input-wrap input {
-        width: 500px;
-    }
+    .divider-line {
 
-    .bg-blue {
-        background-color: var(--dark-blue);
-    }
-
-    .white {
-        color: #fff;
+        width: 1100px !important;
+        height: 1px !important;
+        background-color: var(--dark-blue) !important;
+        margin-top: 55px !important;
     }
 </style>
 
 <body>
 
+
+    <!-- <div class="bg-image-wrapper">
+        <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/bg-gradient-hero.png"
+            class="bg-hero-gradient" alt="">
+    </div> -->
+
     <div class="container-min-width ">
 
+        <!-- background gradient that is absolutly positioned behind the contnet 
+Then an image left with text on the right  -->
 
         <section class="hero-section">
             <div class="container-fluid w-100">
-                <div class="row w-100 d-flex justify-content-center align-items-center">
-                    <div class="col-6 text-start">
-
-                        <h1 id="" class="">Thanks for submitting your enquiry</h1>
-                        <h2 class="">A member of our team <br> will be in touch shortly</h2>
-                        <a href="index.html">
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-6 text-start hero-content-container">
+                        <a href="https://eu.tdsynnex.com/crestron-configurator">
                             <p>Back to home</p>
                         </a>
+                        <h1 id="" class="">Thanks for submitting your enquiry</h1>
+                        <h2 class="">A member of our team <br> will be in touch shortly</h2>
                         <div class="hero-logo-wrapper">
-                            <!-- <img src="images/Group 423.png" class="hero-logo" alt=""> -->
+                            <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/logos2.png"
+                                class="hero-logo" alt="">
                         </div>
                     </div>
                     <div class="col-6 hero-img-wrapper">
                         <div>
-                            <img src="images/flex-care.png" class="hero-image" alt="">
+                            <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/flex-care.png"
+                                class="hero-image" alt="">
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- <div class="bg-hero-gradient"></div> -->
-
-            <div>
-                <img src="images/bg-gradient-hero.png" class="bg-hero-gradient" alt="">
-            </div>
         </section>
 
+        <div class="d-flex justify-content-center align-items-center">
+            <div class="divider-line">
+            </div>
+        </div>
 
     </div>
 
 </body>
-
 
 </html>
