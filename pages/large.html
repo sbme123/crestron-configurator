@@ -561,7 +561,7 @@
     };
 
     // Get the sever from the page name
-    const pageName = "medium";
+    const pageName = "large";
     // window.location.pathname.slice(1, 6);
     // console.log(pageName);
     // May need to change the page name depending on the url position
@@ -586,17 +586,16 @@
         // Do I need this? 
         const roomName = document.getElementById("room-name").innerText
 
+        const roomSize = "Large"
+
         // Values for the configurator options 
         const audioPreference = document.getElementById("dropdown-select-audio-preferences").value;
         const displayOptions = document.getElementById("dropdown-select-display-option").value;
         const wallMount = document.getElementById("dropdown-select-wall-mount").value;
-        // const trollyMount = document.getElementById("dropdown-select-trolly-mount").value;
         const roomBookings = document.getElementById("dropdown-select-room-bookings").value;
         const flexcare = document.getElementById("dropdown-select-flex-care").value;
         const xioCloud = document.getElementById("dropdown-select-xio-cloud").value;
         const roomLicense = document.getElementById("dropdown-select-room-license").value;
-
-
 
         // These are the values for the sign up form 
         const userName = document.getElementById("input-name").value;
@@ -618,6 +617,7 @@
                     COMPANY: userCompany,
                     NUMBER: userNumber,
                     ROOMNAME: roomName,
+                    ROOMSIZE: roomSize,
                     AUDIOPREFERENCE: audioPreference,
                     DISPLAYOPTIONS: displayOptions,
                     WALLMOUNT: wallMount,
