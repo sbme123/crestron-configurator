@@ -169,16 +169,7 @@
         width: 100%;
     }
 
-    .section1 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 50px;
-        width: 800px;
-        text-align: center;
-        color: #000000;
-    }
+
 
     .section2 {
         display: flex;
@@ -228,21 +219,21 @@
     }
 </style>
 
-<body>
+<body class="flex justify-center">
 
 
-    <div class="container-min-width flex-column justify-content-center align-items-center">
+    <div class="container-min-width flex-column justify-center items-center">
         <div class="hero-image-wrapper">
             <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/perfect-pairing-hero.png"
                 class="hero-image" alt="">
         </div>
 
 
-        <div class="flex-section bg-[#F2F5F9]">
-            <div class="section1">
-                <h1 class="pt-2">The Perfect Pairing</h1>
-                <h2 class="pt-2">Microsoft Teams rooms made simple</h2>
-                <p class="pt-2">Built to keep everyone securely connected and highly productive, in the office or at
+        <div class="flex-section bg-[#F2F5F9] py-12">
+            <div class="flex flex-col justify-center items-center p-[50] w-[800px] text-center">
+                <h1 class="pb-2">The Perfect Pairing</h1>
+                <h2 class="pb-2">Microsoft Teams rooms made simple</h2>
+                <p class="pb-2">Built to keep everyone securely connected and highly productive, in the office or at
                     home,
                     using
                     Microsoft
@@ -250,10 +241,10 @@
             </div>
         </div>
 
-        <div class="flex-section bg-white">
+        <div class="flex-section bg-white py-12">
             <div class="section2">
                 <div class="col-left text-left">
-                    <h3 class="py-2">Why Crestron?</h3>
+                    <h3 class="pb-2">Why Crestron?</h3>
                     <p class="pb-12">Crestron is the pioneer of home and office automation, making it the perfect brand
                         to
                         offer an
@@ -356,23 +347,23 @@
 
 
         <div class="flex-section bg-white pt-12">
-            <div class="flex flex-column align-items-center w-[1000px]">
+            <div class="flex flex-column items-center w-[1000px]">
                 <h3 class="pt-2">Easy to customise</h3>
                 <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/easy-to-customise.png"
                     class="w-[600px] h-auto" alt="">
                 <h3 class="pt-2">One complete platform designed to: </h3>
                 <div class="flex w-100 py-12 px-6">
-                    <div class="w-1/3 flex flex-column align-items-center py-8">
+                    <div class="w-1/3 flex flex-column items-center py-8">
                         <img class="w-[100px] pb-8"
                             src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/table-icon.png" alt="">
                         <p>Make it simple to locate the right spaces</p>
                     </div>
-                    <div class="w-1/3 flex flex-column align-items-center py-8">
+                    <div class="w-1/3 flex flex-column items-center py-8">
                         <img class="w-[100px] pb-8"
                             src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/clock-icon.png" alt="">
                         <p>Display real-time room information right at the door </p>
                     </div>
-                    <div class="w-1/3 flex flex-column align-items-center py-8">
+                    <div class="w-1/3 flex flex-column items-center py-8">
                         <img class="w-[100px] pb-8"
                             src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/gear-icon.png" alt="">
                         <p>Manage the flow of people and ideas, keeping organizations moving smoothly and smartly</p>
@@ -382,22 +373,22 @@
         </div>
 
 
-        <div class="bg-[#003991] flex flex-column align-items-center text-white">
+        <div class="bg-[#003991] flex flex-column items-center text-white">
             <h3 class="w-[600px] text-white p-12 text-center">Start with Crestron and Microsoft 365® software today,
                 knowing
                 you’ll be ready for all the advantages of a Microsoft Teams® panel in the future.
                 No additional costs.
             </h3>
             <div class="flex w-100 py-12 px-12">
-                <div class="w-1/3 flex flex-column align-items-center p-8">
+                <div class="w-1/3 flex flex-column items-center p-8">
                     <p class="text-[52px]">90%</p>
                     <p>Make it simple to locate the right spaces</p>
                 </div>
-                <div class="w-1/3 flex flex-column align-items-center p-8">
+                <div class="w-1/3 flex flex-column items-center p-8">
                     <p class="text-[52px]">75%</p>
                     <p>Display real-time room information right at the door </p>
                 </div>
-                <div class="w-1/3 flex flex-column align-items-center p-8">
+                <div class="w-1/3 flex flex-column items-center p-8">
                     <p>80%</p>
                     <p>Manage the flow of people and ideas, keeping organizations moving smoothly and smartly</p>
                 </div>
@@ -450,22 +441,22 @@
         </div>
 
         <div class="flex-section bg-white py-12">
-            <div class="flex flex-column align-items-center w-[1000px]">
+            <div class="flex flex-column items-center w-[1000px]">
                 <h3 class="pt-2">Crestron XiO Cloud platform
                 </h3>
                 <div class="flex w-100 py-12 px-6">
-                    <div class="w-1/3 flex flex-column align-items-center p-8">
+                    <div class="w-1/3 flex flex-column items-center p-8">
                         <img class="w-[100px] pb-8"
                             src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/arrow-icon.png" alt="">
                         <p>Enables scalability, consistency, reliability, and flexibility to evolve as organisational
                             needs change</p>
                     </div>
-                    <div class="w-1/3 flex flex-column align-items-center p-8">
+                    <div class="w-1/3 flex flex-column items-center p-8">
                         <img class="w-[100px] pb-8"
                             src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/globe-icon.png" alt="">
                         <p>Provides a single service to deploy and manage all your rooms globally</p>
                     </div>
-                    <div class="w-1/3 flex flex-column align-items-center p-8">
+                    <div class="w-1/3 flex flex-column items-center p-8">
                         <img class="w-[100px] pb-8"
                             src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/pond-icon.png" alt="">
                         <p>Significantly lowers your cost of ownership due to less hardware, software, programming, and
@@ -476,7 +467,7 @@
             </div>
         </div>
 
-        <div class="bg-[#003991] flex flex-column align-items-center text-white py-12">
+        <div class="bg-[#003991] flex flex-column items-center text-white py-12">
             <h3 class="w-[1000px] text-white p-12 text-center">Ready to make your meeting room simple?
                 Having trouble navigating your way through the different options? Engage with our Maverick and TDSYNNEX
                 teams across Europe and we’ll gladly help you on your way.
