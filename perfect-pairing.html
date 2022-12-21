@@ -44,7 +44,7 @@
     }
 
     p {
-        font-size: 18px !important;
+        font-size: 18px;
     }
 
     button {
@@ -52,10 +52,6 @@
 
     }
 
-    .container-min-width {
-        min-width: 1200px !important;
-        max-width: 1200px !important;
-    }
 
     /* Hero styles */
 
@@ -148,9 +144,7 @@
         border: 1px solid red !important;
     }
 
-    .content-wrap img {
-        width: 100% !important;
-    }
+
 
     .divider-line {
 
@@ -162,6 +156,12 @@
 
 
     /* NEW STYLES  */
+
+    .container-min-width {
+        min-width: 1280px !important;
+        max-width: 1280px !important;
+    }
+
 
     .flex-section {
         display: flex;
@@ -199,7 +199,8 @@
     }
 
     .configure-button {
-        width: 300px !important;
+        width: auto !important;
+
     }
 
     .col-right {
@@ -215,25 +216,29 @@
     }
 
     .divider-img {
-        width: 1000px;
+        width: 800px !important;
+    }
+
+    .icon-img {
+        width: 100px !important;
     }
 </style>
 
 <body class="flex justify-center">
 
 
-    <div class="container-min-width flex-column justify-center items-center">
+    <div class="container-min-width flex-col justify-center items-center">
         <div class="hero-image-wrapper">
             <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/perfect-pairing-hero.png"
                 class="hero-image" alt="">
         </div>
 
 
-        <div class="flex-section bg-[#F2F5F9] py-12">
+        <div class="flex-section bg-[#F2F5F9] py-24">
             <div class="flex flex-col justify-center items-center p-[50] w-[800px] text-center">
-                <h1 class="pb-2">The Perfect Pairing</h1>
-                <h2 class="pb-2">Microsoft Teams rooms made simple</h2>
-                <p class="pb-2">Built to keep everyone securely connected and highly productive, in the office or at
+                <h1 class="pb-8">The Perfect Pairing</h1>
+                <h2 class="pb-8">Microsoft Teams rooms made simple</h2>
+                <p class="pb-8">Built to keep everyone securely connected and highly productive, in the office or at
                     home,
                     using
                     Microsoft
@@ -241,8 +246,8 @@
             </div>
         </div>
 
-        <div class="flex-section bg-white py-12">
-            <div class="section2">
+        <div class="flex-section bg-white py-24">
+            <div class="flex flex-row justify-center items-center p-[50] w-[1200px] text-center">
                 <div class="col-left text-left">
                     <h3 class="pb-2">Why Crestron?</h3>
                     <p class="pb-12">Crestron is the pioneer of home and office automation, making it the perfect brand
@@ -254,7 +259,7 @@
                         Crestron hardware is designed with ease of use in mind, meaning that any member of the team is
                         able
                         to schedule and join meetings in the room without issues.</p>
-                    <button class="read-more-button">Read More</button>
+                    <!-- <button class="read-more-button">Read More</button> -->
                 </div>
                 <div class="col-right">
                     <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/why-crestron-img.png"
@@ -263,8 +268,8 @@
             </div>
         </div>
 
-        <div class="flex-section bg-grey">
-            <div class="section2">
+        <div class="flex-section bg-white">
+            <div class="flex flex-row justify-center items-center p-[50] w-[1200px] text-center">
                 <div class="col-right">
                     <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/meet-crestron-flex.png"
                         class="hero-image" alt="">
@@ -276,7 +281,7 @@
                         space.
                         All intelligently designed to ensure in-person and remote participants equally seen, heard, and
                         engaged. So, your organisation can collaborate at its best.</p>
-                    <button class="read-more-button">Read More</button>
+                    <!-- <button class="read-more-button">Read More</button> -->
                 </div>
 
             </div>
@@ -284,8 +289,8 @@
 
 
 
-        <div class="flex-section bg-grey">
-            <div class="section2">
+        <div class="flex-section bg-white">
+            <div class="flex flex-row justify-center items-center p-[50] w-[1200px] text-center">
                 <div class="col-left text-left">
                     <h3 class="py-2">A Crestron Flex for every space</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -296,188 +301,194 @@
                         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
                         culpa qui officia deserunt mollit anim id est laborum.
                     </p>
-                    <button class="read-more-button">Read More</button>
+                    <!-- <button class="read-more-button">Read More</button> -->
                 </div>
                 <div class="col-right">
-                    <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/why-crestron-img.png"
+                    <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/crestron-flex.png"
                         class="hero-image" alt="">
                 </div>
             </div>
         </div>
 
 
-        <div class="divider-img-wrapper bg-grey py-12">
+        <div class="divider-img-wrapper bg-whie py-24">
             <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/divider-img.png"
                 class="divider-img" alt="">
         </div>
 
 
-        <div class="bg-blue">
-            <h3 class="text-white p-12 text-center">In the hybrid world, office real estate becomes a scarcity, managing
+        <div class="bg-[#003991] py-24">
+
+            <p class=" text-[32px] leading-[36px] text-white text-center py-8 px-24">
+                In the hybrid world, office real estate becomes a
+                scarcity,
+                managing
                 your space
                 and
                 time
                 correctly is
                 the key to a successful meeting practice.
-            </h3>
+            </p>
         </div>
 
 
-        <div class="flex-section bg-grey">
-            <div class="section2">
-                <div class="col-left text-left">
-                    <h3 class="py-2">A Crestron Flex for every space</h3>
-                    <p class="pb-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut
-                        labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                        ut
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                        culpa qui officia deserunt mollit anim id est laborum.
+        <div class=" flex-section bg-grey">
+            <div class="flex flex-row justify-center items-center w-[1280px] text-center">
+                <div class="w-[640px] text-left p-8">
+                    <h3 class="px-12">Crestron Room Scheduling
+                        + Microsoft Teams® Panel
+                    </h3>
+                    <p class="px-12">Together Crestron Room Scheduling and Microsoft help your organisation run more
+                        efficiently from booking meetings to optimising meeting rooms. Delivering data on space
+                        utilisation, room cleanliness, and capacity. Intelligence that drives the success of returning
+                        to the office safely and effectively.
                     </p>
-                    <button class="read-more-button">Read More</button>
+                    <!-- <button class="read-more-button">Read More</button> -->
                 </div>
-                <div class="col-right">
-                    <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/why-crestron-img.png"
-                        class="hero-image" alt="">
+                <div class="w-[640px] h-auto">
+                    <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/flex-care.png"
+                        class="w-[640px] h-auto" alt="">
                 </div>
             </div>
         </div>
 
 
-        <div class="flex-section bg-white pt-12">
-            <div class="flex flex-column items-center w-[1000px]">
+        <div class="flex-section bg-white py-24">
+            <div class="flex flex-col items-center w-[1000px]">
                 <h3 class="pt-2">Easy to customise</h3>
                 <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/easy-to-customise.png"
-                    class="w-[600px] h-auto" alt="">
+                    class="w-[600px] h-auto" alt="" style="width: 600px;">
                 <h3 class="pt-2">One complete platform designed to: </h3>
                 <div class="flex w-100 py-12 px-6">
-                    <div class="w-1/3 flex flex-column items-center py-8">
-                        <img class="w-[100px] pb-8"
+                    <div class="w-1/3 flex flex-col items-center p-8">
+                        <img class="w-[100px] pb-8 icon-img"
                             src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/table-icon.png" alt="">
-                        <p>Make it simple to locate the right spaces</p>
+                        <p class="text-center">Make it simple to locate the right spaces</p>
                     </div>
-                    <div class="w-1/3 flex flex-column items-center py-8">
-                        <img class="w-[100px] pb-8"
-                            src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/clock-icon.png" alt="">
-                        <p>Display real-time room information right at the door </p>
+                    <div class="w-1/3 flex flex-col items-center p-8">
+                        <img class="w-[100px] pb-8 icon-img"
+                            src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/clock-icon.png" alt=""
+                            style="width: 100px;">
+                        <p class="text-center">Display real-time room information right at the door </p>
                     </div>
-                    <div class="w-1/3 flex flex-column items-center py-8">
-                        <img class="w-[100px] pb-8"
-                            src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/gear-icon.png" alt="">
-                        <p>Manage the flow of people and ideas, keeping organizations moving smoothly and smartly</p>
+                    <div class="w-1/3 flex flex-col items-center p-8">
+                        <img class="w-[100px] pb-8 icon-img"
+                            src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/gear-icon.png" alt=""
+                            style="width: 100px;">
+                        <p class="text-center">Manage the flow of people and ideas, keeping organizations moving
+                            smoothly and smartly</p>
                     </div>
                 </div>
             </div>
         </div>
 
 
-        <div class="bg-[#003991] flex flex-column items-center text-white">
-            <h3 class="w-[600px] text-white p-12 text-center">Start with Crestron and Microsoft 365® software today,
+        <div class="bg-[#003991] flex flex-col items-center text-white py-24">
+            <p class="w-[600px] text-[32px] leading-[36px] text-white p-8 text-center">Start with Crestron and Microsoft
+                365® software
+                today,
                 knowing
                 you’ll be ready for all the advantages of a Microsoft Teams® panel in the future.
                 No additional costs.
-            </h3>
-            <div class="flex w-100 py-12 px-12">
-                <div class="w-1/3 flex flex-column items-center p-8">
-                    <p class="text-[52px]">90%</p>
-                    <p>Make it simple to locate the right spaces</p>
+            </p>
+            <div class="flex w-[800px] py-12 px-12">
+                <div class="w-1/3 flex flex-col items-center p-8">
+                    <p class="text-[52px] pb-6">90%</p>
+                    <p class="text-center px-6">increase in IT <br>
+                        time savings</p>
                 </div>
-                <div class="w-1/3 flex flex-column items-center p-8">
-                    <p class="text-[52px]">75%</p>
-                    <p>Display real-time room information right at the door </p>
+                <div class="w-1/3 flex flex-col items-center p-8">
+                    <p class="text-[52px] pb-6">75%</p>
+                    <p class="text-center px-6">increase in room <br> and
+                        device usage</p>
                 </div>
-                <div class="w-1/3 flex flex-column items-center p-8">
-                    <p>80%</p>
-                    <p>Manage the flow of people and ideas, keeping organizations moving smoothly and smartly</p>
+                <div class="w-1/3 flex flex-col items-center p-8">
+                    <p class="text-[52px] pb-6">80%</p>
+                    <p class="text-center px-6">increase in <br> room
+                        uptime</p>
                 </div>
             </div>
         </div>
 
-        <div class="flex-section bg-grey">
-            <div class="section2">
-                <div class="col-left text-left">
-                    <h3 class="py-2">A Crestron Flex for every space</h3>
-                    <p class="pb-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut
-                        labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                        ut
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                        culpa qui officia deserunt mollit anim id est laborum.
+        <div class=" flex-section bg-grey">
+            <div class="flex flex-row justify-center items-center w-[1280px] text-center">
+                <div class="w-[640px] text-left p-8">
+                    <h3 class="px-12">XiO Cloud
+                    </h3>
+                    <p class="px-12">Crestron XiO Cloud is the one unifying operation management platform that is
+                        built-in to all Crestron products and many third-party devices.
                     </p>
-                    <button class="read-more-button">Read More</button>
+                    <!-- <button class="read-more-button">Read More</button> -->
+                </div>
+                <div class="w-[640px] h-auto">
+                    <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/xio-cloud.png"
+                        class="w-[640px] h-auto" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="flex-section bg-white">
+            <div class="flex flex-row justify-center items-center p-[50] w-[1200px] text-center">
+                <div class="col-left text-left">
+                    <h3 class="py-2">Crestron XiO CloudTM lets you gather actionable usage data with no programming, so
+                        you can optimise people, space, and technology to truly make an intelligent enterprise. </h3>
+                    <p class="pb-12">Built on the Microsoft Azure® platform, Crestron XiO Cloud is located in the same
+                        cloud as Office 365® to deliver the best, most secure cloud solution.
+                        <br><br>
+                        Gather Intelligence, Reallocate Spaces,
+                        Drive Increased Productivity
+
+                    </p>
+                    
                 </div>
                 <div class="col-right">
-                    <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/why-crestron-img.png"
-                        class="hero-image" alt="">
+                    <img src="images/xio-cloud.png" class="hero-image" alt="">
                 </div>
             </div>
-        </div>
+        </div> -->
 
-
-        <div class="flex-section bg-white">
-            <div class="section2">
-                <div class="col-left text-left">
-                    <h3 class="py-2">A Crestron Flex for every space</h3>
-                    <p class="pb-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut
-                        labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                        ut
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                        culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                    <button class="read-more-button">Read More</button>
-                </div>
-                <div class="col-right">
-                    <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/why-crestron-img.png"
-                        class="hero-image" alt="">
-                </div>
-            </div>
-        </div>
-
-        <div class="flex-section bg-white py-12">
-            <div class="flex flex-column items-center w-[1000px]">
+        <div class="flex-section bg-white p-24">
+            <div class="flex flex-col items-center w-[1000px]">
                 <h3 class="pt-2">Crestron XiO Cloud platform
                 </h3>
                 <div class="flex w-100 py-12 px-6">
-                    <div class="w-1/3 flex flex-column items-center p-8">
+                    <div class="w-1/3 flex flex-col items-center p-8">
                         <img class="w-[100px] pb-8"
                             src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/arrow-icon.png" alt="">
-                        <p>Enables scalability, consistency, reliability, and flexibility to evolve as organisational
+                        <p class="text-center">Enables scalability, consistency, reliability, and flexibility to evolve
+                            as organisational
                             needs change</p>
                     </div>
-                    <div class="w-1/3 flex flex-column items-center p-8">
+                    <div class="w-1/3 flex flex-col items-center p-8">
                         <img class="w-[100px] pb-8"
                             src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/globe-icon.png" alt="">
-                        <p>Provides a single service to deploy and manage all your rooms globally</p>
+                        <p class="text-center">Provides a single service to deploy and manage all your rooms globally
+                        </p>
                     </div>
-                    <div class="w-1/3 flex flex-column items-center p-8">
+                    <div class="w-1/3 flex flex-col items-center p-8">
                         <img class="w-[100px] pb-8"
                             src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/pond-icon.png" alt="">
-                        <p>Significantly lowers your cost of ownership due to less hardware, software, programming, and
+                        <p class="text-center">Significantly lowers your cost of ownership due to less hardware,
+                            software, programming, and
                             labour</p>
                     </div>
                 </div>
-                <button class="read-more-button">Read More</button>
+                <!-- <button class="read-more-button">Read More</button> -->
             </div>
         </div>
 
-        <div class="bg-[#003991] flex flex-column items-center text-white py-12">
-            <h3 class="w-[1000px] text-white p-12 text-center">Ready to make your meeting room simple?
+        <div class="bg-[#003991] flex flex-col items-center text-white py-24">
+            <p class="w-[1000px] text-[32px] leading-[36px] text-white p-8 text-center">Ready to make your meeting room
+                simple?
                 Having trouble navigating your way through the different options? Engage with our Maverick and TDSYNNEX
                 teams across Europe and we’ll gladly help you on your way.
-            </h3>
-            <h3 class="w-[600px] text-white p-12 text-center">Ready to make your meeting room simple?
-            </h3>
-            <button class="configure-button">CONFIGURE YOUR CRESTRON ROOM NOW</button>
+            </p>
+            <p class="w-[1000px] text-[32px] leading-[36px] text-white p-8 text-center">Ready to make your meeting room
+                simple?
+            </p>
+            <a href="https://eu.tdsynnex.com/crestron-configurator"><button class="configure-button">CONFIGURE YOUR
+                    CRESTRON ROOM NOW</button></a>
         </div>
-
-
 
 
         <!-- main container div -->
