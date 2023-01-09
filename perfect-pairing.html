@@ -9,17 +9,6 @@
 </head>
 
 <style>
-    body {
-        /* 
-        display: flex !important;
-        justify-content: center !important;
-        align-items: center !important;
-        */
-    }
-
-
-
-
     :root {
         --dark-blue: #003991 !important;
         --light-grey: #EEEEEF !important;
@@ -170,8 +159,6 @@
         width: 100%;
     }
 
-
-
     .section2 {
         display: flex;
         justify-content: center;
@@ -196,12 +183,20 @@
     }
 
     .read-more-button {
-        width: 200px !important;
+        color: #003991;
+        width: 150px !important;
+        border: 2px solid #003991 !important;
+        border-radius: 50px !important;
+        text-align: center !important;
+        cursor: pointer !important;
+        font-size: 18px !important;
+        font-weight: 600 !important;
+        padding: 6px 14px !important;
     }
 
     .configure-button {
-        width: auto !important;
-
+        width: 400px !important;
+        font-size: 18px !important;
     }
 
     .col-right {
@@ -223,6 +218,22 @@
     .icon-img {
         width: 100px !important;
     }
+
+    .page-heading {
+        font-size: 64px !important;
+        line-height: 68px !important;
+        padding-left: 22px !important;
+        padding-right: 22px !important;
+    }
+
+    .page-subheading {
+        font-size: 32px !important;
+        line-height: 38px !important;
+    }
+
+    .hero-text {
+        padding: 50px !important;
+    }
 </style>
 
 <body class="flex justify-center">
@@ -236,10 +247,11 @@
 
 
         <div class="flex-section bg-[#F2F5F9] py-24">
-            <div class="flex flex-col justify-center items-center p-[50] w-[800px] text-center">
-                <h1 class="pb-8">The Perfect Pairing</h1>
-                <h2 class="pb-8">Microsoft Teams rooms made simple</h2>
-                <p class="pb-8">Built to keep everyone securely connected and highly productive, in the office or at
+            <div class="flex flex-col justify-center items-center p-[50] text-center">
+                <h1 class="pb-8 page-heading">The Perfect Pairing</h1>
+                <h2 class="pb-8 page-subheading">Microsoft Teams rooms made simple</h2>
+                <p class="hero-text text-[32px] leading-[36px]">Built to keep everyone securely connected and highly
+                    productive, in the office or at
                     home,
                     using
                     Microsoft
@@ -260,7 +272,7 @@
                         Crestron hardware is designed with ease of use in mind, meaning that any member of the team is
                         able
                         to schedule and join meetings in the room without issues.</p>
-                    <!-- <button class="read-more-button">Read More</button> -->
+
                 </div>
                 <div class="col-right">
                     <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/why-crestron-img.png"
@@ -282,7 +294,10 @@
                         space.
                         All intelligently designed to ensure in-person and remote participants equally seen, heard, and
                         engaged. So, your organisation can collaborate at its best.</p>
-                    <!-- <button class="read-more-button">Read More</button> -->
+                    <a href="https://eu.tdsynnex.com/Nuploads/Country/COM/Documents/EU_Website/pb-flex-brochure-generic.pdf"
+                        target="_blank">
+                        <div class="read-more-button">Learn More</div>
+                    </a>
                 </div>
 
             </div>
@@ -388,6 +403,7 @@
                 today,
                 knowing
                 you’ll be ready for all the advantages of a Microsoft Teams® panel in the future.
+                <br><br>
                 No additional costs.
             </p>
             <div class="flex w-[800px] py-12 px-12">
@@ -416,8 +432,14 @@
                     </h3>
                     <p class="px-12">Crestron XiO Cloud is the one unifying operation management platform that is
                         built-in to all Crestron products and many third-party devices.
+                        <br><br>
+                        Implementing increased efficiency and greater productivity is
+                        closer than you think. Many of your devices may be ready now.
                     </p>
-                    <!-- <button class="read-more-button">Read More</button> -->
+                    <a href="https://eu.tdsynnex.com/Nuploads/Country/COM/Documents/EU_Website/mg-xio-cloud-sell-sheet.pdf"
+                        target="_blank">
+                        <div class="read-more-button my-6 mx-12">Read More</div>
+                    </a>
                 </div>
                 <div class="w-[640px] h-auto">
                     <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/EU_Website/Xio-Cloud-New-Logo.jpg"
@@ -425,6 +447,7 @@
                 </div>
             </div>
         </div>
+
 
 
         <div class="flex-section bg-white p-24">
