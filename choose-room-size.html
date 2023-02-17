@@ -118,9 +118,11 @@
         width: 100% !important;
     }
 
+
     .button-wrapper {
         max-width: 120px !important;
         height: auto !important;
+        margin: auto;
     }
 
     .card-content-wrapper {
@@ -157,6 +159,28 @@
         height: 1px !important;
         background-color: var(--dark-blue) !important;
         margin-top: 55px !important;
+    }
+
+    .card {
+        border: 2px solid var(--dark-blue);
+        display: flex;
+        justify-content: center;
+    }
+
+    .card-title {
+        font-size: 36px !important;
+    }
+
+    .configure-btn-wrapper {
+        display: flex !important;
+        justify-content: center !important;
+    }
+
+    .configure-btn {
+        margin: auto 0 !important;
+        font-size: 20px !important;
+        font-height: 24px !important;
+        width: 160px !important;
     }
 </style>
 
@@ -232,13 +256,15 @@
                             </div>
                         </div> -->
                         <div class="col-12">
-                            <div class="card-content-wrapper d-flex flex-column justify-content-center text-start p-4">
-                                <h2 class="">SMALL MEETING ROOM</h2>
-                                <p>CENTER OF ROOM or front of room AUDIO <br> 3-4 PEOPLE</p>
+                            <div
+                                class="card text-center card-content-wrapper d-flex flex-column justify-content-center text-start p-4">
+                                <h2 class="card-title">SMALL</h2>
+                                <p>3-4 PEOPLE <br> CENTER OF ROOM or front of room AUDIO</p>
                                 <!-- <p>2-4 People <br> Mic Range 3 metres</p> -->
-                                <div class="button-wrapper">
+                                <div class="configure-btn-wrapper">
                                     <a
-                                        href="https://eu.tdsynnex.com/crestron-configurator/small-meeting-room"><button>configure</button></a>
+                                        href="https://eu.tdsynnex.com/maverick/vendor/crestron/configurator/small-meeting-room"><button
+                                            class="configure-btn">configure</button></a>
                                     <!-- <a href="pages/small.html"><button>configure</button></a> -->
                                 </div>
                             </div>
@@ -253,14 +279,17 @@
                             </div>
                         </div> -->
                         <div class="col-12">
-                            <div class="card-content-wrapper d-flex flex-column justify-content-center text-start p-4">
-                                <h2 class="">MEDIUM MEETING ROOM</h2>
-                                <p>5-8 PEOPLE <br> 6 METER MIC RANGE
-                                </p>
-                                <div class="button-wrapper">
-                                    <a
-                                        href="https://eu.tdsynnex.com/crestron-configurator/medium-meeting-room"><button>configure</button></a>
-                                    <!-- <a href="pages/small.html"><button>configure</button></a> -->
+                            <div
+                                class="card text-center card-content-wrapper d-flex flex-column justify-content-center text-start p-4">
+                                <h2 class="card-title">MEDIUM</h2>
+                                <p>5-8 PEOPLE <br> 6 METER MIC RANGE</p>
+                                <div class="flex ">
+                                    <div class="configure-btn-wrapper">
+                                        <a class=""
+                                            href="https://eu.tdsynnex.com/maverick/vendor/crestron/configurator/medium-meeting-room"><button
+                                                class="configure-btn">configure</button></a>
+                                        <!-- <a href="pages/small.html"><button>configure</button></a> -->
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -274,15 +303,17 @@
                             </div>
                         </div> -->
                         <div class="col-12">
-                            <div class="card-content-wrapper d-flex flex-column justify-content-center text-start p-4">
-                                <h2 class="">LARGE MEETING ROOM</h2>
+                            <div
+                                class="card text-center card-content-wrapper d-flex flex-column justify-content-center text-start p-4">
+                                <h2 class="card-title">LARGE</h2>
                                 <p>9-10 PEOPLE
                                     <br>
                                     2X6 METRE MIC RANGE
                                 </p>
-                                <div class="button-wrapper">
+                                <div class="configure-btn-wrapper">
                                     <a
-                                        href="https://eu.tdsynnex.com/crestron-configurator/large-meeting-room"><button>configure</button></a>
+                                        href="https://eu.tdsynnex.com/maverick/vendor/crestron/configurator/large-meeting-room"><button
+                                            class="configure-btn">configure</button></a>
                                     <!-- <a href="pages/small.html"><button>configure</button></a> -->
                                 </div>
                             </div>
